@@ -47,7 +47,7 @@ const AddTransaction = () => {
       transactionType === "expense" ? -numberAmount : numberAmount;
 
     const newTransaction = {
-      id: uuidv4(),
+      _id: uuidv4(),
       text,
       amount: signedAmount,
     };
