@@ -16,8 +16,6 @@ app.use(express.json());
 
 app.use(cors());
 
-console.log(process.env.MODE_ENV);
-
 if (process.env.MODE_ENV === "development") {
   app.use((req, res, next) => {
     const start = Date.now();
