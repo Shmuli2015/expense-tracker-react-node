@@ -1,0 +1,18 @@
+{
+  "name": "expense-tracker-react-node",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "client": "npm run dev --prefix client",
+    "server": "npm run server --prefix server",
+    "dev": "concurrently \"npm run dev --prefix client\" \"npm run server --prefix server\"",
+    "installDependencies": "npm install && cd client && npm install && cd ../server && npm install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  }
+}
