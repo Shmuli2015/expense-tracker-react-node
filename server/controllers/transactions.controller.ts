@@ -24,7 +24,7 @@ export const getTransactions = async (
   next: NextFunction
 ) => {
   try {
-    const transactions = await TransactionsModel.find();
+    const transactions = await TransactionsModel.find();    
 
     res
       .status(200)
