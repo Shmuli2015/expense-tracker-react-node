@@ -92,16 +92,16 @@ const AddTransaction = () => {
           <StyledTransactionTypeButton
             type="button"
             onClick={() => setTransactionType("income")}
-            active={transactionType === "income"}
+            $isActive={transactionType === "income"}
           >
             <span className="symbol">+</span> Income
           </StyledTransactionTypeButton>
           <StyledTransactionTypeButton
             type="button"
             onClick={() => setTransactionType("expense")}
-            active={transactionType === "expense"}
+            $isActive={transactionType === "expense"}
           >
-            <span className="symbol">−</span> Expense
+            <span className="symbol">-</span> Expense
           </StyledTransactionTypeButton>
         </StyledTransactionTypeContainer>
         {error && <StyledErrorText>{error}</StyledErrorText>}

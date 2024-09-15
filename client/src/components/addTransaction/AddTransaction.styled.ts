@@ -34,10 +34,10 @@ export const StyledTransactionTypeContainer = styled.div`
   margin: 20px 0;
 `;
 
-export const StyledTransactionTypeButton = styled.button<{ active: boolean }>`
-  background-color: ${({ active }) => (active ? "#28a745" : "#f8f9fa")};
-  color: ${({ active }) => (active ? "#fff" : "#000")};
-  border: 2px solid ${({ active }) => (active ? "#28a745" : "#ddd")};
+export const StyledTransactionTypeButton = styled.button<{ $isActive: boolean }>`
+  background-color: ${({ $isActive }) => ($isActive ? "#28a745" : "#f8f9fa")};
+  color: ${({ $isActive }) => ($isActive ? "#fff" : "#000")};
+  border: 2px solid ${({ $isActive }) => ($isActive ? "#28a745" : "#ddd")};
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,7 +49,7 @@ export const StyledTransactionTypeButton = styled.button<{ active: boolean }>`
   width: 48%;
   
   &:hover {
-    background-color: ${({ active }) => (active ? "#218838" : "#e2e6ea")};
+    background-color: ${({ $isActive }) => ($isActive ? "#218838" : "#e2e6ea")};
   }
 
   .symbol {
